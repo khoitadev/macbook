@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-75 {
+    color: #757575 !important;
+}
+.btn {
+    color: #fff !important;
+    background-color: black !important;
+    padding: 12px 24px !important;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #ccc !important;
+    color: black !important;
+}
+
+.open {
+    display: block !important;
+}
+
+#main {
+    width: 100%;
+}
+
+/* header */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 59px;
+    z-index: 1;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+#header .logo {
+    line-height: 59px;
+}
+
+#header .logo a {
+    text-decoration: none;
+    padding: 19px;
+    text-transform: uppercase;
+    color: black;
+}
+#header .nav-list {
+    position: absolute;
+    right: 0;
+    line-height: 59px;
+    top: 0;
+}
+
+#header .nav-list a {
+    color: black;
+    text-decoration: none;
+    padding: 19px;
+    text-transform: uppercase;
+}
+
+#header .nav-list a:hover, .logo a:hover {
+    background-color: #ccc;
+}
+
+#header .moblie-menu-btn {
+    display: none;
+}
+
+/* slider */
+
+#slider {
+    position: relative;
+    background: url('./img/slider.jpg') center / cover no-repeat;
+    height: 635px;
+}
+
+#slider .slider-body {
+    padding: 48px;
+    color: #fff;
+}
+
+#slider .slider-heading {
+    font-size: 64px;
+    font-weight: 400;
+    padding: 120px 0 50px;
+}
+
+#slider .slider-body p {
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+#slider .slider-btn {
+    font-size: 18px;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: black;
+    background-color: #ccc;
+    opacity: 0.6;
+}
+
+#slider .slider-btn:hover {
+    opacity: 1;
+}
+
+#slider .slider-icon {
+    position: absolute;
+    font-size: 18px;
+    bottom: 50px;
+    left: 48px;
+}
+
+#slider .slider-icon i:hover {
+    opacity: 0.6;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    padding: 128px 16px;
+}
+
+#content .section-heading {
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#content .section-slogan {
+    font-size: 18px;
+    margin: 18px 0 75px;
+    text-align: center;
+}
+
+/* about */
+
+.about-item {
+
+}
+
+.about-icon {
+    font-size: 64px;
+}
+
+.about-item h4 {
+    margin: 40px 0 32px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* design */
+
+.design {
+    background: #f1f1f1;
+}
+
+.design h3 {
+    font-size: 24px;
+    margin: 50px 0;
+    font-weight: 200;
+}
+
+.design p {
+    margin: 20px 0 30px;
+}
+
+.design a {
+    text-decoration: none;
+}
+
+.design img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* team */
+
+.team-item {
+
+}
+
+.team-item img {
+    width: 100%;
+    opacity: 0.8;
+    display: block;
+    border: none;
+}
+
+.team-body {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 0.15px 16px;
+}
+
+.team-heading {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.team-job {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.team-text {
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.team-btn {
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.team-btn:hover {
+    background-color: #ccc;
+}
+
+/* number */
+
+.number {
+    background-color: #616161;
+}
+
+.number-list {
+    padding: 64px 16px;
+    background-color: #616161;
+}
+
+.number span {
+    font-size: 36px;
+}
+
+.number div {
+    color: #fff;
+    font-size: 15px;
+}
+
+.number div p {
+    margin: 16px 0;
+}
+
+/* work */
+
+.work-img {
+    margin: 8px 0;
+    padding: 0 8px;
+}
+
+.work-img img{
+    width: 100%;
+    
+}
+
+.work-img:hover {
+    opacity: 0.6;
+}
+
+
+/* skill */
+
+.skill {
+    background-color: #f1f1f1;
+}
+
+.skill-list {
+    padding: 64px 16px;
+}
+
+.skill-heading {
+    font-size: 24px;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.skill-text {
+    font-size: 15px;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.process {
+    font-size: 15px;
+    margin: 15px 0;
+    letter-spacing: 4px;
+}
+
+.progress {
+    height: 28px !important;
+    background-color: #9e9e9e !important;
+
+}
+
+.progress-bar {
+    background-color: #616161 !important;
+    font-size: 15px;
+}
+
+/* pricing */
+
+#pricing {
+    background-color: #616161;
+}
+ 
+.pricing-list {
+
+}
+
+.pricing-item ul {
+    list-style-type: none;
+    background-color: #fff; 
+}
+
+.pricing-item {
+    margin: 16px 0;
+}
+
+.pricing-item li {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-one {
+    padding: 0 !important;
+}
+
+.list-one h3 {
+    font-weight: 300;
+}
+
+.pricing-item li span {
+    font-weight: bold;
+}
+
+.pricing-item .pricing-heading {
+    padding: 32px 16px;
+    margin-bottom: 0;
+    background-color: black;
+    color: #fff;
+}
+
+
+.pricing-item .list-center {
+    margin-top: -16px;
+}
+
+.pricing-item .pricing-heading-center {
+    padding: 48px 16px;
+    background-color: #f44336;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.list-btn {
+    padding: 8px 16px !important;
+}
+
+/* contact */
+
+#contact {
+    background-color: #f1f1f1;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+.address {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.address-icon {
+    font-size: 36px;
+    width: 50px;
+}
+
+.form-item {
+    width: 100%;
+}
+
+.form-btn {
+    margin-left: 16px;
+}
+
+.map {
+    margin-top: 48px;
+}
+
+.map img {
+    width: 100%;
+    filter: grayscale(75%);
+}
+
+/* footer */
+
+#footer {
+    background-color: black;
+    height: 288px;
+    padding: 64px 0;
+}
+
+.footer-btn {
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.footer-btn:hover {
+    text-decoration: none;
+    background-color: #ccc;
+    color: black;
+}
+.footer-icon {
+    margin: 16px 0;
+    font-size: 24px;
+}
+
+.footer-icon a:hover {
+    opacity: 0.6;
+}
+
+.footer-text {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.footer-text a {
+    text-decoration: underline;
+}
+
+.footer-text a:hover {
+    color: green !important;
+}
+/* pc */
+
+@media (min-width: 64em) {
+    
+}
+/* tablet */
+@media (min-width: 46.1875em) and (max-width: 63.9375em) {
+    #slider .slider-body p {
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 63.9375em) {
+    #content .content-section {
+        padding: 64px 16px;
+    }
+    .design h3 {
+        margin: 0;
+    }
+
+    .design p {
+        margin: 20px 0 10px;
+    }
+
+    .skill-heading {
+        margin: 0;
+    }
+
+    .skill-text {
+        margin: 16px 0;
+    }
+    
+}
+
+/* mobile */
+@media (max-width: 46.1875em) { 
+    .number-list {
+        padding: 32px 16px;
+    }
+    
+    #header .logo {
+        display: inline-block;
+    }
+
+    #header .nav-list {
+        top: 100%;
+        left: 0;
+        display: none;
+        background: #fff;
+    }
+
+    #header .nav-list a {
+        display: block;
+        line-height: normal;
+        padding-left: 30px;
+    }
+
+    #header .moblie-menu-btn {
+        float: right;
+        display: block;
+        padding: 17.5px 21px;
+    }
+
+    #header .moblie-menu-btn:hover {
+        background-color: #ccc;
+    }
+
+    #slider .slider-heading {
+        padding: 20px 0;
+        margin: 0;
+    }
+    
+    #slider .slider-body {
+        padding: 32px;
+        margin-top: 59px;
+    }
+
+    #slider .slider-body p {
+        margin-bottom: 48px;
+    }
+
+    #slider .slider-icon {
+        font-size: 24px;
+        bottom: 30px;
+    }
+
+    #slider .slider-btn {
+        font-size: 16px;
+        padding: 12px 16px;
+    }
+    #slider .slider-icon a {
+        padding-right: 8px;
+    }
+}
